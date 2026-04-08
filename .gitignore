@@ -1,2 +1,4 @@
-**/__handlers__
-*.lock
+**/__handlers__/
+**/**.lock
+**/**.lock~
+**/*.rep*
