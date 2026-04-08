@@ -94,5 +94,7 @@ Memory.scan(targetModule.base, targetModule.size, "7D", {
 
 
 Next, I took the latest address logged, deducted a little bit from the address and printed memory dump (please note that address is always randomized because of KASLR) : 
+
+
 <img width="704" height="441" alt="Untitled design" src="https://github.com/user-attachments/assets/df73995c-15f6-43da-ad52-2685e113e001" />
 
