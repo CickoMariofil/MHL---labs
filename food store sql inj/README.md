@@ -30,4 +30,19 @@ We can hook exeqSQL method in Frida to log executed SQL queries, with one exampl
 INSERT INTO users (username, password, address, isPro) VALUES ('adfafa', 'ZGFzZmFkc2ZhZg==', 'YWRmYWRzZmFm', 0)
 ```
 
+Some observations: 
+* Username input is not changed at **ALL**
+* Password is base64 encoded, so we'll have to insert it base64 encoded as well
+* We'll have to insert 1 instead of 0 for *isPro*
+
+
+We'll have to terminate the part after our injection, we can use /* comment. 
+Also, we have to input password and address as well in order to validate the input, but those won't be used with our injecion
+
+With that in mind, something like this will work:
+```
+Cicko' , 'dGVzdDEyMzQ=', 'test address', 1) /*
+```
+<img width="633" height="1383" alt="image" src="https://github.com/user-attachments/assets/d45cde90-8760-4b39-bea2-a81b3115ef6c" />
+
 
