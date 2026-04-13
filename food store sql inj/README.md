@@ -50,6 +50,6 @@ Cicko' , 'dGVzdDEyMzQ=', 'test address', 1) /*
 
 For this particular application if username was base64 encoded like the rest of parameters, we would have no way of injecting. 
 
-But in general, we can follow [these] (https://developer.android.com/privacy-and-security/risks/sql-injection) principles, for instance using prepared statements.  
+But in general, we can follow these (https://developer.android.com/privacy-and-security/risks/sql-injection) principles, for instance using prepared statements.  
 
 
