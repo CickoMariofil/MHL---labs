@@ -46,3 +46,10 @@ Cicko' , 'dGVzdDEyMzQ=', 'test address', 1) /*
 <img width="633" height="1383" alt="image" src="https://github.com/user-attachments/assets/d45cde90-8760-4b39-bea2-a81b3115ef6c" />
 
 
+## Mitigation
+
+For this particular application if username was base64 encoded like the rest of parameters, we would have no way of injecting. 
+
+But in general, we can follow [these] (https://developer.android.com/privacy-and-security/risks/sql-injection) principles, for instance using prepared statements.  
+
+
