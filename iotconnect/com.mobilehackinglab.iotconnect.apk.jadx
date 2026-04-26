@@ -1,0 +1,130 @@
+{
+  "projectVersion": 2,
+  "files": [
+    "com.mobilehackinglab.iotconnect.apk"
+  ],
+  "treeExpansionsV2": [
+    "c:com.mobilehackinglab.iotconnect.MasterSwitchActivity",
+    "t:JResources"
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [
+    {
+      "type": "resource",
+      "tabPath": "AndroidManifest.xml",
+      "subPath": "",
+      "caret": 2626,
+      "view": {
+        "x": 0,
+        "y": 594
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.mobilehackinglab.iotconnect.MasterSwitchActivity$$ExternalSyntheticLambda0",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.mobilehackinglab.iotconnect.MasterSwitchActivity",
+      "subPath": "java",
+      "caret": 4495,
+      "view": {
+        "x": 0,
+        "y": 507
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "androidx.localbroadcastmanager.content.LocalBroadcastManager",
+      "subPath": "java",
+      "caret": 3295,
+      "view": {
+        "x": 0,
+        "y": 1400
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.mobilehackinglab.iotconnect.HomeActivity",
+      "subPath": "java",
+      "caret": 3894,
+      "view": {
+        "x": 0,
+        "y": 551
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.mobilehackinglab.iotconnect.CommunicationManager",
+      "subPath": "java",
+      "caret": 3085,
+      "view": {
+        "x": 0,
+        "y": 256
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "Checker",
+      "subPath": "java",
+      "caret": 1726,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": true,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    }
+  ],
+  "cacheDir": "/home/mario/.var/app/com.github.skylot.jadx/cache/jadx/projects/com.mobilehackinglab.iotconnect-684f1dc25aa9d1b1712e35e3f7a2798d",
+  "enableLiveReload": false,
+  "searchHistory": [
+    "registerReceiver",
+    "broadcastrec"
+  ],
+  "searchResourcesFilter": "$TEXT",
+  "searchResourcesSizeLimit": 0,
+  "pluginOptions": {}
+}
