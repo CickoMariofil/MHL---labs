@@ -119,4 +119,6 @@ sendBroadcast(intent)
 
 <img width="1080" height="2400" alt="Screenshot_20260426-224148" src="https://github.com/user-attachments/assets/c9f377bd-af4e-41a2-9200-dd5ba9a21146" />
 
+## Mitigation
 
+Set broadcast receiver exported = false, use 256 byte key...
