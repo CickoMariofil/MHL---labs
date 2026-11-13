@@ -16,10 +16,10 @@
       "type": "resource",
       "tabPath": "AndroidManifest.xml",
       "subPath": "",
-      "caret": 2626,
+      "caret": 2554,
       "view": {
         "x": 0,
-        "y": 594
+        "y": 462
       },
       "active": false,
       "pinned": false,
@@ -29,7 +29,7 @@
     },
     {
       "type": "class",
-      "tabPath": "com.mobilehackinglab.iotconnect.MasterSwitchActivity$$ExternalSyntheticLambda0",
+      "tabPath": "com.mobilehackinglab.iotconnect.MasterSwitchActivity",
       "subPath": "java",
       "caret": 0,
       "view": {
@@ -44,27 +44,12 @@
     },
     {
       "type": "class",
-      "tabPath": "com.mobilehackinglab.iotconnect.MasterSwitchActivity",
-      "subPath": "java",
-      "caret": 4495,
-      "view": {
-        "x": 0,
-        "y": 507
-      },
-      "active": false,
-      "pinned": false,
-      "bookmarked": false,
-      "hidden": false,
-      "previewTab": false
-    },
-    {
-      "type": "class",
       "tabPath": "androidx.localbroadcastmanager.content.LocalBroadcastManager",
       "subPath": "java",
-      "caret": 3295,
+      "caret": 0,
       "view": {
         "x": 0,
-        "y": 1400
+        "y": 0
       },
       "active": false,
       "pinned": false,
@@ -76,10 +61,10 @@
       "type": "class",
       "tabPath": "com.mobilehackinglab.iotconnect.HomeActivity",
       "subPath": "java",
-      "caret": 3894,
+      "caret": 0,
       "view": {
         "x": 0,
-        "y": 551
+        "y": 0
       },
       "active": false,
       "pinned": false,
@@ -91,10 +76,10 @@
       "type": "class",
       "tabPath": "com.mobilehackinglab.iotconnect.CommunicationManager",
       "subPath": "java",
-      "caret": 3085,
+      "caret": 3703,
       "view": {
         "x": 0,
-        "y": 256
+        "y": 330
       },
       "active": false,
       "pinned": false,
@@ -106,7 +91,7 @@
       "type": "class",
       "tabPath": "Checker",
       "subPath": "java",
-      "caret": 1726,
+      "caret": 3165,
       "view": {
         "x": 0,
         "y": 0
